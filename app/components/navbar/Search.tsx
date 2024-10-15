@@ -7,46 +7,61 @@ const Search = () => {
                 border-[1px]
                 w-full
                 md:w-auto
-                py-2
                 rounded-full
-                shadow-sm
-                hover:shadow-md
+                shadow-md
                 transition
                 cursor-pointer
+                group
             "
         > 
             <div
                 className="
+                    rounded-full
                     flex
                     flex-row
                     items-center
                     justify-between
+                    h-full
                 "
             >
                 <div
                     className="
-                        text-sm
+                        rounded-full
+                        text-base
                         font-semibold
+                        py-2
                         px-6
-                        hover:bg-gray-100   
+                        hover:bg-neutral-100
+                        h-full
+                        flex
+                        items-center
                     "
                 >
                     Dashboard
                 </div>
-                <div 
-                    className="
-                        hover:bg-gray-100
-                        hidden
-                        sm:block
-                        text-sm
-                        font-semibold
-                        px-6
-                        border-x-[1px]
-                        flex-1
-                        text-center
-                    "
-                >
-                    Profile
+                <div className="
+                    border-l-[1px]
+                    group-hover:border-white
+                    transition
+                ">
+                    <div 
+                        className="
+                            rounded-full
+                            hidden
+                            sm:block
+                            text-base
+                            font-semibold
+                            py-2
+                            px-6
+                            flex-1
+                            text-center
+                            hover:bg-neutral-100
+                            h-full
+                            items-center
+                        "
+                    >
+                        Profile
+                    </div>
                 </div>
             </div>
         </div>
