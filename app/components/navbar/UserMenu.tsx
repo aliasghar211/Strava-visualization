@@ -34,7 +34,8 @@ const UserMenu = () => {
                 <div
                     onClick={toggleOpen}
                     className="
-                    py-4
+                    py-1
+                    px-2
                     md:py-1
                     md:px-2
                     border-[1px]

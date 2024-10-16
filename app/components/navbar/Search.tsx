@@ -5,7 +5,7 @@ const Search = () => {
         <div 
             className="
                 border-[1px]
-                w-full
+                w-auto
                 md:w-auto
                 rounded-full
                 shadow-md
@@ -35,6 +35,7 @@ const Search = () => {
                         h-full
                         flex
                         items-center
+                        sm:block
                     "
                 >
                     Dashboard
@@ -47,7 +48,6 @@ const Search = () => {
                     <div 
                         className="
                             rounded-full
-                            hidden
                             sm:block
                             text-base
                             font-semibold
