@@ -1,4 +1,4 @@
-'use client';
+'use client'
 
 interface ButtonProps {
     onClick: (e: React.MouseEvent<HTMLButtonElement>)=> void

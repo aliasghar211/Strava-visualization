@@ -3,7 +3,8 @@ import { Nunito } from 'next/font/google';
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from './components/navbar/Navbar';
-import Modal from "./components/modals/Modal";
+import ClientOnly from './components/ClientOnly';
+import RegisterModal from './components/modals/RegisterModal';
 
 export const metadata: Metadata = {
   title: "Strava API Exploration",
@@ -24,8 +25,10 @@ export default function RootLayout({
           <body
             className={font.className}
           >
-            <Modal actionLabel='Testing' isOpen title="Login Modal"/>
-            <Navbar/>
+            <ClientOnly>
+                <RegisterModal />
+                <Navbar/>
+            </ClientOnly>
             {children}
           </body>
         </html>
